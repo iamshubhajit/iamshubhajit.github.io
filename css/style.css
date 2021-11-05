@@ -3,7 +3,7 @@ body {
 }
 .section1 {
   background: url("../images/back.jpg");
-  background-size: contain;
+  background-size: cover;
   padding: 15vw 0px;
 }
 
@@ -22,11 +22,11 @@ body {
 }
 .testi {
   background: #222 url("../images/testimonials.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 .skils {
   background: #fff url("../images/skills.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 footer {
   background: #fff url("../images/footer.jpg");
