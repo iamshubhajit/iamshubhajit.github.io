@@ -1,0 +1,50 @@
+body {
+  font-family: "Caveat", cursive;
+}
+.section1 {
+  background: url("../images/back.jpg");
+  background-size: contain;
+  padding: 15vw 0px;
+}
+
+.code_font {
+  font-size: 10vw;
+}
+.lineH_40 {
+  line-height: 40px;
+}
+.lineH_30 {
+  line-height: 30px;
+}
+
+.logoWidth {
+  max-width: 200px;
+}
+.testi {
+  background: #222 url("../images/testimonials.jpg");
+  background-size: contain;
+}
+.skils {
+  background: #fff url("../images/skills.jpg");
+  background-size: contain;
+}
+footer {
+  background: #fff url("../images/footer.jpg");
+  background-size: cover;
+  padding: 8vw 0px;
+}
+.socialIcons {
+  display: inline-block;
+  margin: 0px 10px 10px 10px;
+  height: 50px;
+  background: #ffc107;
+  color: #000;
+  font-size: 22px;
+  width: 50px;
+  border-radius: 50px;
+  padding: 14px;
+}
+.socialIcons:hover{
+  color : #ffc107;
+  background: #000;;
+}
