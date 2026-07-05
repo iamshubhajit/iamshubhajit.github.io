@@ -1,234 +1,714 @@
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubhajit Halder - React Javascript Frontend Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                bg: "rgb(219, 234, 254)",
+                darkBlue: "#1d4ed8",
+                lightBlue: "#dbeafe",
+                textBlue: "#2563eb",
+                textDark: "#1e293b",
+                textLight: "#475569",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shubhajit Halder - Web Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-</head>
+      h1,
+      h2,
+      h3,
+      h4,
+      .header-role {
+        font-family: "Manrope", sans-serif;
+      }
 
-<body>
-  <section class="container-fluid bg-dark section1">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h1 class="display-1 text-white fw-bolder" data-aos="zoom-out" data-aos-delay="1500" data-aos-duration="1500"><i class="bi bi-code-slash"></i></h1>
-          <h1 class="display-1 text-white fw-bolder" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500">Shubhajit Halder</h1>
-          <h1 class="display-6 text-white" data-aos="flip-up" data-aos-delay="2000" data-aos-duration="1500">The <span class="text-warning">web developer</span> you want</h1>
-        </div>
-        <div class="col-12 text-center">
-          <a data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500" class="socialIcons" href="https://www.facebook.com/shubhajit.halder.7528" target="_blank"
-          data-bs-toggle="tooltip" data-bs-placement="bottom" title="Let's be friends"><i
-            class="bi bi-facebook"></i></a>
-        <a data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1500" class="socialIcons" href="https://www.linkedin.com/in/iamshubhajit/" target="_blank"
-          data-bs-toggle="tooltip" data-bs-placement="bottom" title="Let's connect"><i class="bi bi-linkedin"></i></a>
-        <a data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1500" class="socialIcons" href="mailto:sbhblore1@gmail.com" target="_blank" data-bs-toggle="tooltip"
-          data-bs-placement="bottom" title="Email me"><i class="bi bi-envelope-fill"></i></a>
-        <a data-aos="fade-up" data-aos-delay="2500" data-aos-duration="1500" class="socialIcons" href="resume.pdf" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
-          title="Download my resume"><i class="bi bi-cloud-download-fill"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid bg-light pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-sm-12 col-12">
-          <h1 data-aos="fade-right" data-aos-duration="3000">
-            <span class="display-4">Experienced and passionate</span>
-            <span class="display-1 fw-bolder">web developer</span>
-            <span class="display-4">focused on crafting great web experiences.</span>
-          </h1>
-        </div>
-        <div class="col-md-4 col-sm-12 col-12">
-          <img src="images/about.png" class="img-fluid" data-aos="zoom-out" data-aos-delay="1000" data-aos-duration="2000"/>
-        </div>
-        <div class="col-md-3 col-sm-12 col-12">
-          <h2 class="lineH_40" data-aos="fade-left" data-aos-duration="3000">Creation and innovation have been my area of interest since I started working with web
-            technologies.</h2>
-          <h4 class="mt-3 lineH_30" data-aos="fade-up" data-aos-duration="3000">Worked on 30+ web applications with collaboration of the creative team. Also
-            efficient as an individual contributor to manage end to end development process.</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid pt-5 pb-5 border-top skils">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="display-2">My Skills</h2>
-          <h4>I live to craft the best web experience for you</h4>
-        </div>
-        <div class="col-md-6 col-sm-12 col-12">
-          <div class="row">
-            <div class="col-12 mb-3">
-              <div class="bg-dark text-white p-5" data-aos="flip-up">
-                <div class="row">
-                  <div class="col-sm-1 col-2">
-                    <h2><span><i class="bi bi-pencil"></i></span></h2>
-                  </div>
-                  <div class="col-sm-11 col-10">
-                    <div class="mb-3">
-                      <h3 class="text-warning"><strong>Design + Development</strong></h3>
-                    </div>
-                    <div>
-                      <h4 class="lineH_30">Clean modern designs - optimized for performance, search engines and
-                        converting users to customers.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 mb-3">
-              <div class="bg-dark text-white p-5" data-aos="flip-down">
-                <div class="row">
-                  <div class="col-sm-1 col-2">
-                    <h2><span><i class="bi bi-code-slash"></i></span></h2>
-                  </div>
-                  <div class="col-sm-11 col-10">
-                    <div class="mb-3">
-                      <h3 class="text-warning"><strong>Technology</strong></h3>
-                    </div>
-                    <div>
-                      <h4 class="lineH_30">Combined all the latest technologies to a progressive website.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 mb-3">
-              <div class="bg-dark text-white p-5" data-aos="flip-up">
-                <div class="row">
-                  <div class="col-sm-1 col-2">
-                    <h2><span><i class="bi bi-phone"></i></span></h2>
-                  </div>
-                  <div class="col-sm-11 col-10">
-                    <div class="mb-3">
-                      <h3 class="text-warning"><strong>Always Responsive</strong></h3>
-                    </div>
-                    <div>
-                      <h4 class="lineH_30">A responsive design makes your website accessible to all users, regardless of
-                        their devices. </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-12 col-12 offset-md-1">
-          <div class="mb-3">
-            <h2><strong><span class="display-5 fw-bolder">Technologies</span><br /><span class="display-1 fw-bolder">I
-                  work with</span></strong></h2>
-          </div>
-          <div>
-            <img src="images/logos.png" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid testi pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5 text-white">
-          <h2 class="display-2">Testimonials</h2>
-          <h4>The love I got from the people</h4>
-        </div>
-        <div class="col-12 mb-5">
-          <div class="row" data-masonry='{"percentPosition": true }'>
-            <div class="col-sm-6 col-12 mb-3">
-              <div class="bg-warning p-5" data-aos="zoom-in" data-aos-delay="1000">
-                <h5>It was a pleasure working with Shubhajit. He was always helpful and hardworking. Shubhajit worked
-                  quickly and effectively on website projects, offering advice and suggestions when needed. He’s a great
-                  member to any team.</h5>
-              </div>
-            </div>
-            <div class="col-sm-6 col-12 mb-3">
-              <div class="bg-warning p-5" data-aos="zoom-in" data-aos-delay="1500">
-                <h5>Shubhajit is a reliable source of knowledge and support, and a terrific partner in our success. I
-                  had
-                  the opportunity to work with Shubhajit on dozens of projects over the years and witness his direct
-                  impact on the success of each project and campaign. I consider him a subject matter expert on all
-                  things web related and I highly recommend him.</h5>
-              </div>
-            </div>
-            <div class="col-sm-6 col-12 mb-3">
-              <div class="bg-warning p-5" data-aos="zoom-in" data-aos-delay="2000">
-                <h5>It is such a pleasure working with Shubhajit! He has an enthusiastic can do attitude that recommends
-                  him to any team environment. I came to Shubhajit with a brief for an area of work that had been a
-                  problem for the team for a couple of years. He not only delivered on the brief but went above and
-                  beyond to recommend solutions that were more practical to our needs than those we had thought of.
-                  Great team player and highly competent developer that goes the extra mile!</h5>
-              </div>
-            </div>
-            <div class="col-sm-6 col-12 mb-3">
-              <div class="bg-warning p-5" data-aos="zoom-in" data-aos-delay="2500">
-                <h5>Shubhajit is one of the best team players I have worked with. Succeeding on multiple web projects
-                  looked so easy, thanks to his exceptional web skills and great time management. The best thing about
-                  Shubhajit is his attitude in a tricky scenario; he’d say – “I’ll find a way out” and trust me, he
-                  always did.</h5>
-                <h5>A super skilled resource and an excellent artist with pleasant demeanor.</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-end">
-          <h5 class="text-white">Note: Testimonials are from my <a class="text-warning"
-              href="https://www.linkedin.com/in/iamshubhajit/" target="_blank">LinkedIn</a> profile </h5>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="display-2">Want to have a conversation?</h2>
-          <h3>Let's grab a coffee, first round is on me</h3>
-        </div>
-        <div class="col-12 text-center mb-5">
-          <a class="socialIcons" href="https://www.facebook.com/shubhajit.halder.7528" target="_blank"
-            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Let's be friends"><i
-              class="bi bi-facebook"></i></a>
-          <a class="socialIcons" href="https://www.linkedin.com/in/iamshubhajit/" target="_blank"
-            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Let's connect"><i class="bi bi-linkedin"></i></a>
-          <a class="socialIcons" href="mailto:sbhblore1@gmail.com" target="_blank" data-bs-toggle="tooltip"
-            data-bs-placement="bottom" title="Email me"><i class="bi bi-envelope-fill"></i></a>
-          <a class="socialIcons" href="resume.pdf" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
-            title="Download my resume"><i class="bi bi-cloud-download-fill"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-    async></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-    AOS.init();
-  </script>
-</body>
+      span.rounded-full {
+        font-family: "JetBrains Mono", monospace;
+      }
 
+      @media print {
+        body {
+          background-color: transparent !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-brand-bg min-h-screen p-10 md:p-12 xl:p-16 text-brand-textDark antialiased"
+  >
+    <div class="w-full mx-auto space-y-10 xl:space-y-14">
+      <!-- PREMIUM 8:4 RATIO SPLIT HEADER -->
+      <header
+        class="bg-white rounded-[2rem] p-12 xl:p-16 shadow-sm break-inside-avoid"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- LEFT BLOCK: Identity & Summary Flow (8 Columns) -->
+          <div class="lg:col-span-8 space-y-8">
+            <div>
+              <h1
+                class="text-5xl xl:text-7xl font-bold tracking-tight text-brand-textDark leading-none"
+              >
+                Shubhajit <span class="text-brand-textBlue">Halder</span>
+              </h1>
+              <div class="flex items-center gap-4 mt-6">
+                <span
+                  class="w-16 h-[4px] bg-brand-textBlue rounded-full"
+                ></span>
+                <span
+                  class="text-sm xl:text-lg uppercase tracking-widest font-semibold text-brand-textBlue"
+                  style="font-family: &quot;JetBrains Mono&quot;, monospace"
+                  >Senior Frontend Developer</span
+                >
+              </div>
+            </div>
+
+            <p
+              class="text-xl xl:text-2xl leading-relaxed text-brand-textLight font-normal"
+            >
+              Senior Frontend Developer with
+              <strong class="text-brand-textDark font-bold">9+ years</strong> of
+              experience building enterprise-scale web applications. Expert in
+              <span class="text-brand-textBlue font-semibold">React 18</span>,
+              <span class="text-brand-textBlue font-semibold">React.js</span>,
+              <span class="text-brand-textBlue font-semibold"
+                >Redux Toolkit</span
+              >, reusable component architecture, performance optimization, and
+              cross-functional Agile delivery.
+            </p>
+          </div>
+
+          <!-- RIGHT BLOCK: Contact Hub -->
+          <div
+            class="lg:col-span-4 lg:border-l-2 lg:border-slate-100 lg:pl-16 space-y-6 py-2"
+          >
+            <!-- <div
+              class="flex items-center gap-5 text-lg xl:text-xl font-medium text-brand-textLight"
+            >
+              <svg
+                class="text-brand-textBlue shrink-0 w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span style="font-family: &quot;JetBrains Mono&quot;, monospace"
+                >Pune, India</span
+              >
+            </div> -->
+
+            <div
+              class="flex items-center gap-5 text-lg xl:text-xl font-medium text-brand-textLight"
+            >
+              <svg
+                class="text-brand-textBlue shrink-0 w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              <span style="font-family: &quot;JetBrains Mono&quot;, monospace"
+                >+91 855-311-0237</span
+              >
+            </div>
+
+            <div
+              class="flex items-center gap-5 text-lg xl:text-xl font-medium text-brand-textLight"
+            >
+              <svg
+                class="text-brand-textBlue shrink-0 w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <a
+                href="mailto:sbhblore1@gmail.com"
+                class="hover:text-brand-textBlue transition-colors break-all"
+                style="font-family: &quot;JetBrains Mono&quot;, monospace"
+                >sbhblore1@gmail.com</a
+              >
+            </div>
+
+            <div
+              class="flex items-center gap-5 text-lg xl:text-xl font-medium text-brand-textLight"
+            >
+              <svg
+                class="text-brand-textBlue shrink-0 w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                />
+              </svg>
+              <a
+                href="https://www.linkedin.com/in/iamshubhajit/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-brand-textBlue hover:underline transition-colors break-all"
+                style="font-family: &quot;JetBrains Mono&quot;, monospace"
+                >linkedin.com/in/iamshubhajit</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN BODY CONTENT -->
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-start"
+      >
+        <!-- EXPERIENCE SECTION (8 Columns) -->
+        <section
+          class="lg:col-span-8 lg:order-2 bg-white rounded-[2rem] p-12 xl:p-16 shadow-sm space-y-12"
+        >
+          <div
+            class="flex items-center gap-4 border-b border-slate-100 pb-4 mb-6"
+          >
+            <span
+              class="w-[6px] h-7 bg-brand-textBlue inline-block rounded"
+            ></span>
+            <h2
+              class="text-lg xl:text-xl font-bold uppercase tracking-widest text-brand-textDark"
+            >
+              Experience
+            </h2>
+          </div>
+
+          <div
+            class="relative border-l-2 border-slate-200 pl-12 ml-2 space-y-16"
+          >
+            <!-- Job 1 -->
+            <div class="relative break-inside-avoid">
+              <span
+                class="absolute -left-[58px] top-2.5 bg-brand-textBlue w-5 h-5 rounded-full ring-4 ring-white"
+              ></span>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                <h3 class="text-3xl xl:text-4xl font-bold text-brand-textDark">
+                  Amdocs
+                </h3>
+                <span
+                  class="inline-block text-sm xl:text-base font-bold text-brand-textBlue bg-brand-lightBlue px-5 py-2 rounded-full shrink-0"
+                  >Dec 2021 – July 2026</span
+                >
+              </div>
+              <p
+                class="text-lg xl:text-xl font-bold uppercase tracking-wide text-brand-textBlue mt-2"
+              >
+                Advanced Software Developer / Senior Frontend Engineer
+              </p>
+              <ul
+                class="mt-6 space-y-4 text-lg xl:text-xl text-brand-textLight list-disc pl-4 marker:text-slate-300 leading-relaxed"
+              >
+                <li>
+                  Architect and scale enterprise frontend applications for
+                  flagship telecom web products utilizing
+                  <strong class="text-brand-textDark font-semibold"
+                    >React 18</strong
+                  >,
+                  <strong class="text-brand-textDark font-semibold"
+                    >React.js</strong
+                  >, and
+                  <strong class="text-brand-textDark font-semibold"
+                    >Redux Toolkit</strong
+                  >.
+                </li>
+                <li>
+                  Successfully migrated 200+ legacy class components into
+                  functional components driven by custom React Hooks, reducing
+                  technical debt and improving maintainability.
+                </li>
+                <li>
+                  Designed and open-sourced a standardized modular UI component
+                  architecture deployed across multiple global product lines.
+                </li>
+                <li>
+                  Engineered advanced performance optimizations including lazy
+                  loading, code-splitting, and route memoization to drastically
+                  lower TTFB.
+                </li>
+                <li>
+                  Boosted unit testing coverage standards across the ecosystem
+                  from 78% to 91% using
+                  <strong class="text-brand-textDark font-semibold">Chai</strong
+                  >,
+                  <strong class="text-brand-textDark font-semibold"
+                    >Mocha</strong
+                  >, and
+                  <strong class="text-brand-textDark font-semibold"
+                    >Sinon</strong
+                  >.
+                </li>
+                <li>
+                  Drive technical code reviews, mentor junior full-stack
+                  developers, and orchestrate modern CI/CD software pipelines.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="relative break-inside-avoid">
+              <span
+                class="absolute -left-[58px] top-2.5 bg-slate-200 w-5 h-5 rounded-full ring-4 ring-white"
+              ></span>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                <h3 class="text-3xl xl:text-4xl font-bold text-brand-textDark">
+                  Clarivate Analytics
+                </h3>
+                <span
+                  class="inline-block text-sm xl:text-base font-bold text-brand-textBlue bg-brand-lightBlue px-5 py-2 rounded-full shrink-0"
+                  >Oct 2018 – Dec 2021</span
+                >
+              </div>
+              <p
+                class="text-lg xl:text-xl font-bold uppercase tracking-wide text-brand-textBlue mt-2"
+              >
+                Senior Analyst — Frontend Developer
+              </p>
+              <ul
+                class="mt-6 space-y-4 text-lg xl:text-xl text-brand-textLight list-disc pl-4 marker:text-slate-300 leading-relaxed"
+              >
+                <li>
+                  Developed complex React Single Page Applications (SPAs)
+                  leveraging custom state management via Redux, Axios
+                  integrations, and React Router.
+                </li>
+                <li>
+                  Designed microservices architectures running on Node.js and
+                  Express.js backends connected to MongoDB databases.
+                </li>
+                <li>
+                  Built and optimized a comprehensive data platform engineered
+                  with Laravel, reducing manual publishing overhead by 95%.
+                </li>
+                <li>
+                  Crafted responsive cross-browser web portals using HTML5,
+                  CSS3, JavaScript ES6+, and Tailwind CSS layout systems.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="relative break-inside-avoid">
+              <span
+                class="absolute -left-[58px] top-2.5 bg-slate-200 w-5 h-5 rounded-full ring-4 ring-white"
+              ></span>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                <h3 class="text-3xl xl:text-4xl font-bold text-brand-textDark">
+                  Skhema
+                </h3>
+                <span
+                  class="inline-block text-sm xl:text-base font-bold text-brand-textBlue bg-brand-lightBlue px-5 py-2 rounded-full shrink-0"
+                  >Jan 2017 – Sep 2018</span
+                >
+              </div>
+              <p
+                class="text-lg xl:text-xl font-bold uppercase tracking-wide text-brand-textBlue mt-2"
+              >
+                Technical Manager
+              </p>
+              <ul
+                class="mt-6 space-y-4 text-lg xl:text-xl text-brand-textLight list-disc pl-4 marker:text-slate-300 leading-relaxed"
+              >
+                <li>
+                  Directed the end-to-end SDLC and code delivery for 10+
+                  high-traffic web applications under strict Agile
+                  cycles.
+                </li>
+                <li>
+                  Architected corporate web framework guidelines utilizing
+                  modern JavaScript frameworks, responsive layouts, and REST
+                  APIs.
+                </li>
+                <li>
+                  Collaborated directly with corporate product stakeholders to
+                  convert complex client specs into clean functional wireframes
+                  and architecture.
+                </li>
+                <li>
+                  Managed engineering deliverables, conducted standard reviews,
+                  and established unified engineering protocols across
+                  teams.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="relative break-inside-avoid">
+              <span
+                class="absolute -left-[58px] top-2.5 bg-slate-200 w-5 h-5 rounded-full ring-4 ring-white"
+              ></span>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                <h3 class="text-3xl xl:text-4xl font-bold text-brand-textDark">
+                  Freelance
+                </h3>
+                <span
+                  class="inline-block text-sm xl:text-base font-bold text-brand-textBlue bg-brand-lightBlue px-5 py-2 rounded-full shrink-0"
+                  >Jun 2014 – Dec 2016</span
+                >
+              </div>
+              <p
+                class="text-lg xl:text-xl font-bold uppercase tracking-wide text-brand-textBlue mt-2"
+              >
+                Web Developer & Consultant
+              </p>
+              <ul
+                class="mt-6 space-y-4 text-lg xl:text-xl text-brand-textLight list-disc pl-4 marker:text-slate-300 leading-relaxed"
+              >
+                <li>
+                  Consulted on, built, and launched robust, custom-tailored
+                  e-commerce sites and digital dashboards for startups and small
+                  enterprises.
+                </li>
+                <li>
+                  Created fast, responsive user interfaces with semantic HTML5,
+                  CSS3, jQuery, and early JavaScript components.
+                </li>
+                <li>
+                  Integrated payment gateways, authentication layers, map
+                  integrations, and analytics tracking scripts safely into
+                  production codes.
+                </li>
+                <li>
+                  Managed lifecycle tracking—from technical scoping and client
+                  prototyping to domain setup, hosting orchestration, and
+                  technical support.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- SIDE BLOCK: SKILLS, EDUCATION, PROJECTS (4 Columns) -->
+        <div
+          class="lg:col-span-4 lg:order-1 space-y-10 flex flex-col justify-start"
+        >
+          <!-- SKILLS SECTION -->
+          <section
+            class="bg-white rounded-[2rem] p-12 shadow-sm space-y-8 break-inside-avoid"
+          >
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+              <span
+                class="w-[6px] h-7 bg-brand-textBlue inline-block rounded"
+              ></span>
+              <h2
+                class="text-lg xl:text-xl font-bold uppercase tracking-widest text-brand-textDark"
+              >
+                Skills
+              </h2>
+            </div>
+
+            <div class="space-y-5">
+              <h4
+                class="text-sm xl:text-base uppercase tracking-wider font-bold text-brand-textLight"
+              >
+                Frontend Architecture
+              </h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >React 18</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >React.js / ReactJS</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >JavaScript ES6+</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >HTML5 / CSS3</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Bootstrap</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >jQuery</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <h4
+                class="text-sm xl:text-base uppercase tracking-wider font-bold text-brand-textLight"
+              >
+                State Management
+              </h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Redux Toolkit</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Redux Core</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Context API</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <h4
+                class="text-sm xl:text-base uppercase tracking-wider font-bold text-brand-textLight"
+              >
+                Backend & APIs
+              </h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Express.js</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Laravel</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >REST APIs</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <h4
+                class="text-sm xl:text-base uppercase tracking-wider font-bold text-brand-textLight"
+              >
+                Database Integration
+              </h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >MongoDB</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >MySQL</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <h4
+                class="text-sm xl:text-base uppercase tracking-wider font-bold text-brand-textLight"
+              >
+                Testing Frameworks
+              </h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Chai</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Mocha</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Sinon</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <h4
+                class="text-sm xl:text-base uppercase tracking-wider font-bold text-brand-textLight"
+              >
+                Tools & Methodology
+              </h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Git / Bitbucket</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Jira / Agile</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Vite / Webpack</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Axios</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >React Router</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >JWT</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- EDUCATION SECTION -->
+          <section
+            class="bg-white rounded-[2rem] p-12 shadow-sm space-y-6 break-inside-avoid"
+          >
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+              <span
+                class="w-[6px] h-6 bg-brand-textBlue inline-block rounded"
+              ></span>
+              <h2
+                class="text-lg xl:text-xl font-bold uppercase tracking-widest text-brand-textDark"
+              >
+                Education
+              </h2>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="text-2xl font-bold text-brand-textDark">
+                B.Tech — Computer Science
+              </h3>
+              <p class="text-lg text-brand-textLight font-medium">
+                West Bengal University of Technology
+              </p>
+              <div class="pt-2">
+                <span
+                  class="inline-block text-sm xl:text-base font-bold text-brand-textBlue bg-brand-lightBlue px-5 py-2 rounded-full"
+                  >2009 – 2013</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- SIDE PROJECT SECTION -->
+          <section
+            class="bg-white rounded-[2rem] p-12 shadow-sm space-y-6 break-inside-avoid"
+          >
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+              <span
+                class="w-[6px] h-6 bg-brand-textBlue inline-block rounded"
+              ></span>
+              <h2
+                class="text-lg xl:text-xl font-bold uppercase tracking-widest text-brand-textDark"
+              >
+                Side Project
+              </h2>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="text-2xl font-bold text-brand-textDark">
+                Collaboration Platform
+              </h3>
+              <p class="text-lg text-brand-textLight leading-relaxed">
+                Full-stack project management app built with social
+                architecture, mentions, dynamic infinite scroll patterns, and
+                deep image pipelines.
+              </p>
+              <div class="flex flex-wrap gap-3 pt-2">
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >React.js</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Redux</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >MongoDB</span
+                >
+                <span
+                  class="text-sm xl:text-base font-medium tracking-wide bg-brand-lightBlue text-brand-textBlue px-5 py-2.5 rounded-full"
+                  >Tailwind CSS</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer
+        class="text-center text-lg font-bold text-brand-textDark/50 pt-12 tracking-wide break-inside-avoid"
+      >
+        Shubhajit Halder • Senior Frontend Developer • sbhblore1@gmail.com
+      </footer>
+    </div>
+  </body>
 </html>
